@@ -11,4 +11,4 @@ CREATE TABLE IF NOT EXISTS jobs (
 --
 -- GRANT ALL PRIVILEGES ON DATABASE "application-db" TO "user";
 --
--- INSERT INTO applications (company, position, location) VALUES ("Cspire", "Software Engineer", "Ridgeland, MS");
+-- INSERT INTO applications (company, position, location) VALUES ("Cspire", "Software Engineer", "Ridgeland, MS", "Available Benefits: Full Vision, Full Dental, Hull Health Care");
