@@ -7,11 +7,16 @@
     <title>Make Post</title>
 </head>
 <body>
-<form action="">
-    <label for="employerName">Company: </label><br><input name="employerName" type="text"><br>
-    <label for="postedPosition">Available Position: </label><br><input name="postedPosition" type="text"><br>
-    <label for="positionLocation">Company Location: </label><br><input name="positionLocation" type="text"><br>
-    <label for="benefits">Benefits: </label><br><textarea name="benefits"></textarea>
+<form action="" method="POST">
+    <p>
+        Thank you for using the BCCA Job Board!
+        Here you can post jobs that you think would be perfect for one of our attendees, just fill out the information below.
+    </p>
+    <label for="employerName">Company: </label><br><input required name="employerName" type="text"><br>
+    <label for="postedPosition">Available Position: </label><br><input required name="postedPosition" type="text"><br>
+    <label for="positionLocation">Company Location: </label><br><input required name="positionLocation" type="text"><br>
+    <label for="benefits">Benefits: </label><br><textarea required name="benefits"></textarea><br>
+    <br><button>Submit</button>
 </form>
 </body>
 </html>
