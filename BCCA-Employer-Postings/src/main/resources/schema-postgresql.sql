@@ -2,7 +2,8 @@ CREATE TABLE IF NOT EXISTS jobs (
     id SERIAL PRIMARY KEY NOT NULL,
     company TEXT NOT NULL,
     position TEXT NOT NULL,
-    location TEXT NOT NULL
+    location TEXT NOT NULL,
+    benefits TEXT NOT NULL
 );
 
 --ALTER TABLE jobs OWNER TO "user";
