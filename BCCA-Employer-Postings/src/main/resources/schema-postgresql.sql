@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS jobs (
 
 CREATE TABLE IF NOT EXISTS comments (
     id SERIAL PRIMARY KEY NOT NULL,
-    jobId INT FOREIGN KEY REFERENCES jobs(jobId) NOT NULL,
+    jobId INT REFERENCES jobs(jobId) NOT NULL,
     comment TEXT NOT NULL
 );
 -- INSERT INTO jobs (company, position, location) VALUES ("Cspire", "Software Engineer", "Ridgeland, MS", "Available Benefits: Full Vision, Full Dental, Hull Health Care");
