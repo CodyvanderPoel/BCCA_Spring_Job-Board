@@ -5,6 +5,7 @@ import javax.validation.constraints.NotNull;
 
 public class JobPosting {
 
+
     public Integer id;
 
     @NotNull
@@ -14,12 +15,20 @@ public class JobPosting {
     public String position;
 
     @NotNull
+    public String location;
+
+    @NotNull
+    public String prereqs;
+
+    @NotNull
     public String benefits;
 
-    public JobPosting(Integer id, String company, String position, String benefits){
+    public JobPosting(Integer id, String company, String position, String location, String prereqs, String benefits){
         this.id = id;
         this.company = company;
         this.position = position;
+        this.location = location;
+        this.prereqs = prereqs;
         this.benefits = benefits;
     }
 
@@ -32,12 +41,24 @@ public class JobPosting {
     public void setCompany() {
         this.company = company;
     }
+
     public String getPosition(){
         return position.trim();
     }
     public void setPosition() {
         this.position = position;
     }
+
+    public String getLocation(){
+        return location.trim();
+    }
+    public void setLocation() { this.location = location; }
+
+    public String getPrereqs(){return prereqs.trim(); }
+    public void setPrereqs() { this.prereqs = prereqs;
+    }
+
+
     public String getBenefits(){
         return benefits.trim();
     }
