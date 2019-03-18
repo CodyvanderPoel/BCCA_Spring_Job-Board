@@ -3,6 +3,7 @@ CREATE TABLE IF NOT EXISTS jobs (
     company TEXT NOT NULL,
     position TEXT NOT NULL,
     location TEXT NOT NULL,
+    prereqs TEXT NOT NULL,
     benefits TEXT NOT NULL
 );
 
@@ -11,5 +12,5 @@ CREATE TABLE IF NOT EXISTS comments (
     jobId INT REFERENCES jobs(jobId) NOT NULL,
     comment TEXT NOT NULL
 );
--- INSERT INTO jobs (company, position, location) VALUES ("Cspire", "Software Engineer", "Ridgeland, MS", "Available Benefits: Full Vision, Full Dental, Hull Health Care");
+-- INSERT INTO jobs (company, position, location) VALUES ("Cspire", "Software Engineer", "Ridgeland, MS", "2+ years of experience", "Available Benefits: Full Vision, Full Dental, Hull Health Care");
 -- INSERT INTO comments (comment) VALUES ("A great opportunity!");
