@@ -1,6 +1,7 @@
 package com.codyvanderpoel.BCCAEmployerPostings.Repositories;
 import com.codyvanderpoel.BCCAEmployerPostings.Models.JobPosting;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -10,7 +11,8 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public class PostgresJobRepository implements com.codyvanderpoel.BCCAEmployerPostings.Repositories.Repository<JobPosting> {
+@ComponentScan(basePackages={"com.codyvanderpoel.BCCAEmployerPostings"})
+public class PostgresJobRepository {
     private JdbcTemplate jdbc;
 
     @Autowired
@@ -18,7 +20,6 @@ public class PostgresJobRepository implements com.codyvanderpoel.BCCAEmployerPos
         jdbc = jdbcTemplate;
     }
 
-    @Override
     public void addPosting(JobPosting posting){
         String columns = "company, position, location, prereqs ,benefits";
         jdbc.update(
@@ -48,8 +49,6 @@ public class PostgresJobRepository implements com.codyvanderpoel.BCCAEmployerPos
         );
     }
 
-
-    @Override
     public List<JobPosting> findAll() {
         return null;
     }
