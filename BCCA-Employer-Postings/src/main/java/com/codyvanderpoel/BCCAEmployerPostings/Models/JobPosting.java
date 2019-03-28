@@ -32,6 +32,16 @@ public class JobPosting {
         this.benefits = benefits;
     }
 
+    public JobPosting(String company, String position, String location, String prereqs, String benefits){
+        this.company = company;
+        this.position = position;
+        this.location = location;
+        this.prereqs = prereqs;
+        this.benefits = benefits;
+    }
+
+
+
     public int getId(){
         return id;
     }
@@ -57,8 +67,6 @@ public class JobPosting {
     public String getPrereqs(){return prereqs.trim(); }
     public void setPrereqs() { this.prereqs = prereqs;
     }
-
-
     public String getBenefits(){
         return benefits.trim();
     }
