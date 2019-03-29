@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6339ccd0-cc05-4ab6-8a9e-cfc8fafbd473" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/MakeJobPostingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/EmployerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/ViewPostingController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/ViewPostingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/Comment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/CommentForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/CommentForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/JobPosting.java" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/JobPosting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Repositories/PostgresJobRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Repositories/PostgresJobRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/schema-postgresql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/schema-postgresql.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/view_employer_post.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/view_employer_post.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/view_post.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/view_post.mustache" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/BCCA-Employer-Postings/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -431,7 +425,35 @@
       <option name="project" value="LOCAL" />
       <updated>1553870091512</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Edited templates to display comments">
+      <created>1553892852946</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1553892852946</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Added a drop to be safe, and added a select to see if stuff was being written to the comments table.">
+      <created>1553892907953</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1553892907953</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Edited these controllers for the carrying of comments back and forth.">
+      <created>1553893042600</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1553893042600</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Removed this class">
+      <created>1553893064328</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1553893064328</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -494,7 +516,6 @@
     </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding files created by IntelliJ" />
     <MESSAGE value="Adding IntelliJ file" />
     <MESSAGE value="Removed a space and added the datasource platform" />
     <MESSAGE value="Fixed the href to match necessary controller" />
@@ -516,7 +537,11 @@
     <MESSAGE value="Set this up to handle all of the user capabilities, excluding the comments." />
     <MESSAGE value="Began setting these classes up so I can implement comments as a feature(unfinished)." />
     <MESSAGE value="Set up the sql queries that finds the jobs by id, and also deletes the postings, and eventually comments." />
-    <option name="LAST_COMMIT_MESSAGE" value="Set up the sql queries that finds the jobs by id, and also deletes the postings, and eventually comments." />
+    <MESSAGE value="Edited templates to display comments" />
+    <MESSAGE value="Added a drop to be safe, and added a select to see if stuff was being written to the comments table." />
+    <MESSAGE value="Edited these controllers for the carrying of comments back and forth." />
+    <MESSAGE value="Removed this class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed this class" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">

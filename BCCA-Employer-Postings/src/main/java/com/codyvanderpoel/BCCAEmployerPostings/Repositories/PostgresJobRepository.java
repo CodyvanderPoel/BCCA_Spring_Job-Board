@@ -1,4 +1,5 @@
 package com.codyvanderpoel.BCCAEmployerPostings.Repositories;
+import com.codyvanderpoel.BCCAEmployerPostings.Models.Comment;
 import com.codyvanderpoel.BCCAEmployerPostings.Models.JobPosting;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
@@ -58,6 +59,24 @@ public class PostgresJobRepository {
         jdbc.update(sql, id);
     }
 
+    public void addComment(Comment comment){
+        String sql = "INSERT INTO comments (jobId, title, body) VALUES (?, ?, ?);";
+        jdbc.update(sql, comment.getJobId(), comment.getTitle(), comment.getBody());
+    }
+
+    public List<Comment> findPostComments(int id){
+        String sql = "SELECT * FROM comments WHERE jobId = ?";
+        return jdbc.query(sql, this::mapToComment, id);
+    }
+
+    public Comment mapToComment(ResultSet rs, int rowNum) throws SQLException {
+        return new Comment(
+                rs.getInt("id"),
+                rs.getInt("jobId"),
+                rs.getString("title"),
+                rs.getString("body")
+        );
+    }
     public void deleteComment(int id){
         String sql = "DELETE FROM comments WHERE id = ?;";
         jdbc.update(sql, id);
