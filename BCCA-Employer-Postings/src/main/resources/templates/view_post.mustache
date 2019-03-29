@@ -12,37 +12,38 @@
 </head>
 <body>
 <div class="container">
+    {{#job}}
     <div>
-    <label for="employerName">Company: </label><br>
-    <p name="employerName">&nbsp;&nbsp;&nbsp;&nbsp;A Company</p>
-    <label for="postedPosition">Available Position: </label><br>
-    <p name="postedPosition">&nbsp;&nbsp;&nbsp;&nbsp;Software Engineer</p>
-    <label for="positionLocation">Company Location: </label><br>
-    <p name="positionLocation">&nbsp;&nbsp;&nbsp;&nbsp;Oxford, MS</p>
-    <label for="prereqs">Prerequisites: </label><br>
-    <p name="prereqs">&nbsp;&nbsp;&nbsp;&nbsp;Skills we would like you to have:
-    <ul>
-        <li>Bachelor's Degree in Computer Science</li>
-        <li>2+ Years of experience</li>
-    </ul>
-    </p>
-    <label for="benefits">Benefits: </label><br>
-    <p name="benefits">&nbsp;&nbsp;&nbsp;&nbsp;Available Benefits:
-        <ul>
-            <li>Full Vision</li>
-            <li>Full Dental</li>
-            <li>Full Health Care</li>
-        </ul>
-    </p>
-    <button class="btn btn-danger">Delete Posting</button>
+        <p>Company: <br>{{ company }}</p>
+        <p>Location: <br>{{ location }}</p>
+        <p>Position: <br>{{ position }}</p>
+        <p>Requirements: <br>{{ prereqs }}</p>
+        <p>Benefits: <br>{{ benefits }}</p>
+    </div>
+    <div class="col-lg-7 col-md-9 col-sm-12">
+        <form action="/admin_view_jobs/{{id}}/delete" method="GET">
+            <button class="btn btn-danger">Delete</button>
+        </form>
+    </div>
+    {{/job}}
+
+    <div>
+        <br>
+        <p>Comment Section</p>
+        <hr>
     </div>
     <div>
-    <textarea placeholder="Make a comment..." cols="75" rows="3"></textarea> <button class="btn btn-success">Make Comment!</button>
-    </div>
-    <div>
-    <p>Comment 1</p>
-    <p>Comment 2</p>
-    <p>Comment 3</p>
+        <form method="POST" action="">
+            <div class="form-group">
+            <label for="title">Title:</label>
+                <input class="form-control" name=title" type="text">
+            </div>
+            <div class="form-group">
+            <label for="body">Body:</label>
+                <textarea class="form-control" name="body" placeholder="Make a comment..." cols="75" rows="3"></textarea>
+            </div>
+            <button class="btn btn-success">Post Comment</button>
+        </form>
     </div>
 </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

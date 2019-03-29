@@ -22,18 +22,15 @@
        Filter
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">Name</a>
-        <a class="dropdown-item" href="#">Position</a>
-        <a class="dropdown-item" href="#">Location</a>
+        <a class="dropdown-item" href="#">A-Z</a>
+        <a class="dropdown-item" href="#">Oldest</a>
+        <a class="dropdown-item" href="#">Newest</a>
     </div>
 </div>
 <div>
-    <p><a href="https://www.cspire.com/home-services/" target="_blank">Company: CSpire<br>
-        Position: Software Engineer
-    </a><br><span>(EXAMPLE DOES NOT TAKE TO JOB)</span></p>
-    <p><a href="https://www.fedex.com/en-us/home.html" target="_blank">Company: Fedex<br>
-        Position: Front-End Developer
-    </a><span><br>(EXAMPLE DOES NOT TAKE TO JOB)</span></p>
+    {{#jobs}}
+    <a href="/admin_view_jobs/{{ id }}">Company: {{ company }}<br>Position: {{position}}</a><br>
+    {{/jobs}}
 </div>
 </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
