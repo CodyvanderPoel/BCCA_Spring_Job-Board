@@ -30,13 +30,21 @@
     <div>
         <br>
         <p>Comment Section</p>
+        {{#comments}}
+        <h4>{{title}}</h4>
+        <p>{{body}}</p>
+        <form action="/admin_view_jobs/{{jobId}}/{{id}}/delete-comment" method="GET">
+            <button class="btn btn-danger">Delete</button>
+        </form>
+        <br>
+        {{/comments}}
         <hr>
     </div>
     <div>
-        <form method="POST" action="">
+        <form method="POST" action="/admin_view_jobs/{{jobId}}">
             <div class="form-group">
             <label for="title">Title:</label>
-                <input class="form-control" name=title" type="text">
+                <input class="form-control" name="title" type="text">
             </div>
             <div class="form-group">
             <label for="body">Body:</label>
