@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6339ccd0-cc05-4ab6-8a9e-cfc8fafbd473" name="Default Changelist" comment="Added new template for the admin side">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/Comment.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/CommentForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/view_employer_post.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/MakeJobPostingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/MakeJobPostingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/ViewPostingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/ViewPostingsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Repositories/PostgresJobRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Repositories/PostgresJobRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/schema-postgresql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/schema-postgresql.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/employer_home.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/employer_home.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/landing.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/landing.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/view_post.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/view_post.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/view_postings.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/view_postings.mustache" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/BCCA-Employer-Postings/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -399,7 +390,28 @@
       <option name="project" value="LOCAL" />
       <updated>1553782607076</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added new template for the employers viewing of a job, and made proper adjustments to the other templates.">
+      <created>1553869280742</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1553869280742</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Adding Maven files">
+      <created>1553869308961</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1553869308961</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added date_posted field to the jobs table, and added the title and body field to the comments table.">
+      <created>1553869728821</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1553869728821</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -478,7 +490,10 @@
     <MESSAGE value="Corrected the href to the proper url" />
     <MESSAGE value="Maven Changes" />
     <MESSAGE value="Set up the JobPostingForm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set up the JobPostingForm" />
+    <MESSAGE value="Added new template for the employers viewing of a job, and made proper adjustments to the other templates." />
+    <MESSAGE value="Adding Maven files" />
+    <MESSAGE value="Added date_posted field to the jobs table, and added the title and body field to the comments table." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added date_posted field to the jobs table, and added the title and body field to the comments table." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
