@@ -1,3 +1,5 @@
+--DROP TABLE comments;
+
 CREATE TABLE IF NOT EXISTS jobs (
     jobId SERIAL PRIMARY KEY NOT NULL,
     company TEXT NOT NULL,
@@ -23,3 +25,4 @@ GRANT ALL PRIVILEGES ON DATABASE "postings" TO "postings";
 -- INSERT INTO comments (comment) VALUES ("A great opportunity!");
 
 SELECT * FROM jobs;
+SELECT * FROM comments;
