@@ -35,12 +35,12 @@ public class PostgresJobRepository {
     public Optional<JobPosting> findById(int id) {
 
         return Optional.ofNullable(
-                jdbc.queryForObject("SELECT * FROM applications WHERE id= ?;", this::mapToPosting ,id));
+                jdbc.queryForObject("SELECT * FROM jobs WHERE jobId= ?;", this::mapToPosting ,id));
     }
 
     public JobPosting mapToPosting(ResultSet rs, int rowNum) throws SQLException {
         return new JobPosting(
-            rs.getInt("id"),
+            rs.getInt("jobId"),
             rs.getString("company"),
             rs.getString("position"),
             rs.getString("location"),
@@ -50,6 +50,16 @@ public class PostgresJobRepository {
     }
 
     public List<JobPosting> findAll() {
-        return null;
+        return jdbc.query("SELECT * FROM jobs;",this::mapToPosting);
+    }
+
+    public void deletePosting(int id){
+        String sql = "DELETE FROM jobs WHERE jobId = ?;";
+        jdbc.update(sql, id);
+    }
+
+    public void deleteComment(int id){
+        String sql = "DELETE FROM comments WHERE id = ?;";
+        jdbc.update(sql, id);
     }
 }
