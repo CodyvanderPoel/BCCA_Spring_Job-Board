@@ -1,5 +1,7 @@
 package com.codyvanderpoel.BCCAEmployerPostings.Controllers;
 
+import com.codyvanderpoel.BCCAEmployerPostings.Models.Comment;
+import com.codyvanderpoel.BCCAEmployerPostings.Models.CommentForm;
 import com.codyvanderpoel.BCCAEmployerPostings.Models.JobPosting;
 import com.codyvanderpoel.BCCAEmployerPostings.Repositories.PostgresJobRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,16 +9,17 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
 @Controller
-public class ViewPostingsController {
+public class AdminController {
 
     public PostgresJobRepository jobRepository;
 
     @Autowired
-    public ViewPostingsController(PostgresJobRepository repo){
+    public AdminController(PostgresJobRepository repo){
         jobRepository = repo;
     }
 
@@ -31,7 +34,9 @@ public class ViewPostingsController {
     public String getAdminJobDetails(Model model, @PathVariable(value="jobId") String jobId){
         var job = jobRepository.findById(Integer.parseInt(jobId));
         if ((job).isPresent()){
+            List<Comment> comments = jobRepository.findPostComments( Integer.parseInt(jobId));
             model.addAttribute("job", job.get());
+            model.addAttribute("comments", comments);
             return "view_post";
         }else{
             return "404";
@@ -46,5 +51,18 @@ public class ViewPostingsController {
         }else{
             return "404";
         }
+    }
+
+    @PostMapping("/admin_view_jobs/{jobId}")
+    public String postComment(CommentForm form, Model model, @PathVariable(value = "jobId") String jobId) {
+        Comment comment = new Comment(Integer.parseInt(jobId), form.getTitle(), form.getBody());
+        jobRepository.addComment(comment);
+        return "redirect:/admin_view_jobs/" + jobId;
+    }
+
+    @GetMapping("/admin_view_jobs/{jobId}/{id}/delete-comment")
+    public String deleteJobComment(Model model, @PathVariable(value="jobId") String jobId, @PathVariable(value="id") String id){
+            jobRepository.deleteComment(Integer.parseInt(id));
+            return "redirect:/admin_view_jobs/" + jobId;
     }
 }

@@ -1,5 +1,6 @@
 package com.codyvanderpoel.BCCAEmployerPostings.Controllers;
 
+import com.codyvanderpoel.BCCAEmployerPostings.Models.Comment;
 import com.codyvanderpoel.BCCAEmployerPostings.Models.JobPosting;
 import com.codyvanderpoel.BCCAEmployerPostings.Models.JobPostingForm;
 import com.codyvanderpoel.BCCAEmployerPostings.Repositories.PostgresJobRepository;
@@ -14,12 +15,12 @@ import java.util.List;
 import java.util.Optional;
 
 @Controller
-public class MakeJobPostingController {
+public class EmployerController {
 
     public PostgresJobRepository jobRepository;
 
     @Autowired
-    public MakeJobPostingController(PostgresJobRepository repo){
+    public EmployerController(PostgresJobRepository repo){
         jobRepository = repo;
     }
 
@@ -34,7 +35,9 @@ public class MakeJobPostingController {
     public String getJobDetails(Model model, @PathVariable(value="jobId") String jobId){
         var job = jobRepository.findById(Integer.parseInt(jobId));
         if ((job).isPresent()){
+            List<Comment> comments = jobRepository.findPostComments( Integer.parseInt(jobId));
             model.addAttribute("job", job.get());
+            model.addAttribute("comments", comments);
             return "view_employer_post";
         }else{
             return "404";
