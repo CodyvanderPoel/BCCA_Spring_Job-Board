@@ -9,13 +9,9 @@ public class CommentForm {
     @NotNull
     public String body;
 
-    @NotNull
-    public Integer jobId;
-
     public CommentForm(String title, String body, Integer jobId){
         this.title = title;
         this.body = body;
-        this.jobId = jobId;
     }
 
     public String getTitle() {return title;}
@@ -27,7 +23,4 @@ public class CommentForm {
     public void setBody(String body) {
         this.body = body;
     }
-
-    public Integer getJobId() {return jobId; }
-    public void setJobId(Integer jobId) { this.jobId = jobId; }
 }
