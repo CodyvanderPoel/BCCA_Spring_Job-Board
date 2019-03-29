@@ -64,11 +64,11 @@ public class JobPosting {
     }
     public void setLocation() { this.location = location; }
 
-    public String getPrereqs(){return prereqs.trim(); }
+    public String getPrereqs(){return prereqs; }
     public void setPrereqs() { this.prereqs = prereqs;
     }
     public String getBenefits(){
-        return benefits.trim();
+        return benefits;
     }
     public void setBenefits() {
         this.benefits = benefits;
