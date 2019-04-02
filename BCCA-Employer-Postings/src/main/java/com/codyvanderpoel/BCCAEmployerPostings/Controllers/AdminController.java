@@ -3,6 +3,7 @@ package com.codyvanderpoel.BCCAEmployerPostings.Controllers;
 import com.codyvanderpoel.BCCAEmployerPostings.Models.Comment;
 import com.codyvanderpoel.BCCAEmployerPostings.Models.CommentForm;
 import com.codyvanderpoel.BCCAEmployerPostings.Models.JobPosting;
+import com.codyvanderpoel.BCCAEmployerPostings.Models.SortForm;
 import com.codyvanderpoel.BCCAEmployerPostings.Repositories.PostgresJobRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -64,5 +65,32 @@ public class AdminController {
     public String deleteJobComment(Model model, @PathVariable(value="jobId") String jobId, @PathVariable(value="id") String id){
             jobRepository.deleteComment(Integer.parseInt(id));
             return "redirect:/admin_view_jobs/" + jobId;
+    }
+    @PostMapping("/admin_view_jobs")
+    public String sortForAdmin(Model model, SortForm form){
+        String result = form.getSort();
+        List<JobPosting> jobs = returnSortedJobs(result);
+        model.addAttribute("jobs", jobs);
+        return "view_postings";
+    }
+
+
+    public List<JobPosting> returnSortedJobs(String result){
+        List<JobPosting> jobs;
+        switch (result) {
+            case "new":
+                jobs = jobRepository.findAllNew();
+                break;
+            case "old":
+                jobs = jobRepository.findAllOld();
+                break;
+            case "alphabetized":
+                jobs = jobRepository.findAllAlphebetized();
+                break;
+            default:
+                jobs = jobRepository.findAllNew();
+                break;
+        }
+        return jobs;
     }
 }

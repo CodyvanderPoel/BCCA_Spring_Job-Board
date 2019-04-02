@@ -11,9 +11,14 @@
 <body>
 <div class="container">
 <h1>BCCA Job Board</h1>
-{{#jobs}}
-<a href="/employer_view_jobs/{{ id }}">Company: {{ company }}<br>Position: {{position}}</a><br>
-{{/jobs}}
+    <div>
+        {{#jobs}}
+            <a href="/employer_view_jobs/{{ id }}">
+                Company: {{ company }}<br>Position: {{position}}
+            </a>
+            <br><br>
+        {{/jobs}}
+    </div>
 <a class="btn  btn-primary" href="employer_home/make_posting">Post a Job</a>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

@@ -1,4 +1,5 @@
 --DROP TABLE comments;
+--DROP TABLE jobs;
 
 CREATE TABLE IF NOT EXISTS jobs (
     jobId SERIAL PRIMARY KEY NOT NULL,
@@ -7,7 +8,7 @@ CREATE TABLE IF NOT EXISTS jobs (
     location TEXT NOT NULL,
     prereqs TEXT NOT NULL,
     benefits TEXT NOT NULL,
-    date_posted TIMESTAMP NOT NULL
+    date_posted TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE IF NOT EXISTS comments (

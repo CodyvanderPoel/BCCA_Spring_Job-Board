@@ -22,7 +22,7 @@ public class PostgresJobRepository {
     }
 
     public void addPosting(JobPosting posting){
-        String columns = "company, position, location, prereqs ,benefits";
+        String columns = "company, position, location, benefits, prereqs";
         jdbc.update(
                 "INSERT INTO jobs (" + columns + ") VALUES (?, ?, ?, ?, ?);" ,
                 posting.getCompany(),
@@ -37,6 +37,17 @@ public class PostgresJobRepository {
 
         return Optional.ofNullable(
                 jdbc.queryForObject("SELECT * FROM jobs WHERE jobId= ?;", this::mapToPosting ,id));
+    }
+
+    public List<JobPosting> findAllAlphebetized() {
+        return jdbc.query("SELECT * FROM jobs ORDER BY company ASC;", this::mapToPosting);
+    }
+    public List<JobPosting> findAllNew() {
+        return jdbc.query("SELECT * FROM jobs ORDER BY date_posted DESC;", this::mapToPosting);
+    }
+
+    public List<JobPosting> findAllOld() {
+        return jdbc.query("SELECT * FROM jobs ORDER BY date_posted ASC;", this::mapToPosting);
     }
 
     public JobPosting mapToPosting(ResultSet rs, int rowNum) throws SQLException {

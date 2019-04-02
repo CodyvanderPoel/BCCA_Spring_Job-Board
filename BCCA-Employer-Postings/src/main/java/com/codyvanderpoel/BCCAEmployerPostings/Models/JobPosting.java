@@ -65,8 +65,8 @@ public class JobPosting {
     public void setLocation() { this.location = location; }
 
     public String getPrereqs(){return prereqs; }
-    public void setPrereqs() { this.prereqs = prereqs;
-    }
+    public void setPrereqs() { this.prereqs = prereqs; }
+
     public String getBenefits(){
         return benefits;
     }

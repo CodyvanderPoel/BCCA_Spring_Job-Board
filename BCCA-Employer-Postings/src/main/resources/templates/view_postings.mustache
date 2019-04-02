@@ -12,24 +12,50 @@
 </head>
 <body>
 <div class="container">
-<div class="dropdown m-1">
-    <button class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false">
-       Filter
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">A-Z</a>
-        <a class="dropdown-item" href="#">Oldest</a>
-        <a class="dropdown-item" href="#">Newest</a>
-    </div>
-</div>
+    <form class="filter-form" action="/admin_view_jobs" method="POST">
+        <div class="row">
+            <p class="col-sm-12 col-md-3 col-lg-3">
+                <label for="new">
+                    Newest</label>
+                <input
+                        id="new"
+                        type="radio"
+                        name="sortBy"
+                        value="new"
+                        checked
+                />
+            </p>
+            <p class="col-sm-12 col-md-3 col-lg-3">
+                <label for="old"
+                >Oldest</label>
+                <input
+                        id="old"
+                        type="radio"
+                        name="sortBy"
+                        value="old"
+                />
+            </p>
+            <p class="col-sm-12 col-md-3 col-lg-3">
+                <label for="alphabetized">A-Z</label>
+                <input
+                        id="alphabetized"
+                        type="radio"
+                        name="sortBy"
+                        value="alphabetized"
+                />
+            </p>
+        </div>
+
+        <button class="btn btn-success" type="submit">
+            Sort
+        </button>
+    </form>
 <div>
     {{#jobs}}
-    <a href="/admin_view_jobs/{{ id }}">Company: {{ company }}<br>Position: {{position}}</a><br>
+    <a href="/admin_view_jobs/{{ id }}">
+        Company: {{ company }}<br>Position: {{position}}
+    </a>
+    <br><br>
     {{/jobs}}
 </div>
 </div>

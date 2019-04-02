@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6339ccd0-cc05-4ab6-8a9e-cfc8fafbd473" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/ViewPostingController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/CommentForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/CommentForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/SortForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/JobPosting.java" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/JobPosting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Repositories/PostgresJobRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Repositories/PostgresJobRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/schema-postgresql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/schema-postgresql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/employer_home.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/employer_home.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/view_postings.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/view_postings.mustache" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/BCCA-Employer-Postings/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,20 +28,82 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="38" column="53" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="53" />
+            <state relative-caret-position="253">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/SortForm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+              <folding>
+                <element signature="e#198#199#0" expanded="true" />
+                <element signature="e#227#228#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/EmployerController.java">
+        <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/schema-postgresql.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="39" column="53" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
+            <state>
+              <caret selection-end-line="2" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1554226597535" expanded="true" signature="1004:1048" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/JobPosting.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/JobPostingForm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+              <folding>
+                <element signature="e#656#657#0" expanded="true" />
+                <element signature="e#686#687#0" expanded="true" />
+                <element signature="e#732#733#0" expanded="true" />
+                <element signature="e#770#771#0" expanded="true" />
+                <element signature="e#805#806#0" expanded="true" />
+                <element signature="e#836#837#0" expanded="true" />
+                <element signature="e#884#885#0" expanded="true" />
+                <element signature="e#924#925#0" expanded="true" />
+                <element signature="e#959#960#0" expanded="true" />
+                <element signature="e#990#991#0" expanded="true" />
+                <element signature="e#1038#1039#0" expanded="true" />
+                <element signature="e#1078#1079#0" expanded="true" />
+                <element signature="e#1112#1113#0" expanded="true" />
+                <element signature="e#1142#1143#0" expanded="true" />
+                <element signature="e#1188#1189#0" expanded="true" />
+                <element signature="e#1226#1227#0" expanded="true" />
+                <element signature="e#1261#1262#0" expanded="true" />
+                <element signature="e#1292#1293#0" expanded="true" />
+                <element signature="e#1340#1341#0" expanded="true" />
+                <element signature="e#1380#1381#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/view_post.mustache">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="556">
+              <caret line="43" column="55" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -60,21 +127,22 @@
         <option value="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/JobPostingForm.java" />
         <option value="$PROJECT_DIR$/BCCA-Employer-Postings/pom.xml" />
         <option value="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/employer_home.mustache" />
-        <option value="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/view_postings.mustache" />
         <option value="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/landing.mustache" />
         <option value="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/MakeJobPostingController.java" />
         <option value="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/ViewPostingsController.java" />
         <option value="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/make_post.mustache" />
         <option value="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/CommentForm.java" />
-        <option value="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/schema-postgresql.sql" />
-        <option value="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/JobPosting.java" />
-        <option value="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Repositories/PostgresJobRepository.java" />
         <option value="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/Comment.java" />
-        <option value="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/AdminController.java" />
         <option value="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/view_post.mustache" />
         <option value="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/EmployerController.java" />
         <option value="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/view_employer_post.mustache" />
+        <option value="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/JobPosting.java" />
+        <option value="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/SortForm.java" />
+        <option value="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/AdminController.java" />
+        <option value="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/employer_home.mustache" />
+        <option value="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/view_postings.mustache" />
+        <option value="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Repositories/PostgresJobRepository.java" />
+        <option value="$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/schema-postgresql.sql" />
       </list>
     </option>
   </component>
@@ -119,7 +187,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -168,36 +235,6 @@
               <item name="BCCA-Employer-Postings" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="BCCAEmployerPostings" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BCCA_Spring_Job-Board" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BCCA_Spring_Job-Board" type="462c0819:PsiDirectoryNode" />
-              <item name="BCCA-Employer-Postings" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="BCCAEmployerPostings" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BCCA_Spring_Job-Board" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BCCA_Spring_Job-Board" type="462c0819:PsiDirectoryNode" />
-              <item name="BCCA-Employer-Postings" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="BCCAEmployerPostings" type="462c0819:PsiDirectoryNode" />
-              <item name="Repositories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BCCA_Spring_Job-Board" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BCCA_Spring_Job-Board" type="462c0819:PsiDirectoryNode" />
-              <item name="BCCA-Employer-Postings" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -213,6 +250,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -453,29 +491,62 @@
       <option name="project" value="LOCAL" />
       <updated>1553893064328</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Prepared this class for handling comments">
+      <created>1553893096915</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1553893096915</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Removed the trim from prereqs and benefits.">
+      <created>1553893182231</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1553893182231</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Added the jobId requirement, and added its getter and setter">
+      <created>1553893260023</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1553893260024</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Removed the involvement of jobId">
+      <created>1553893279082</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1553893279082</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1373" height="875" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2645064" />
+      <window_info id="DB Browser" weight="0.32931423" />
+      <window_info id="Project Explorer" weight="0.32931423" />
+      <window_info id="Job Explorer" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2690279" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="DB Execution Console" weight="0.329235" />
+      <window_info anchor="bottom" id="Console" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49811605" weight="0.21311475" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49811605" weight="0.34016395" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49811605" weight="0.040983606" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49811605" weight="0.6557377" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5018839" side_tool="true" weight="0.4986339" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.49886963" visible="true" weight="0.329235" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.49886963" visible="true" weight="0.84289616" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.329235" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -487,24 +558,29 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2645064" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49811605" visible="true" weight="0.21311475" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49811605" weight="0.040983606" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5018839" side_tool="true" weight="0.4986339" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49886963" weight="0.329235" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.329235" />
+      <window_info id="DB Browser" order="0" />
+      <window_info id="Project Explorer" order="1" />
+      <window_info id="Job Explorer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.2690279" />
+      <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="UI Designer" order="7" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info id="Favorites" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="DB Execution Console" order="0" weight="0.329235" />
+      <window_info anchor="bottom" id="Console" order="1" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49811605" visible="true" weight="0.17759563" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49811605" weight="0.5163934" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5018839" side_tool="true" weight="0.4986339" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49886963" weight="0.32833788" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.329235" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -516,10 +592,6 @@
     </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding IntelliJ file" />
-    <MESSAGE value="Removed a space and added the datasource platform" />
-    <MESSAGE value="Fixed the href to match necessary controller" />
-    <MESSAGE value="Made no id constructor for sending the data in through the POST" />
     <MESSAGE value="Adding Maven constructed files." />
     <MESSAGE value="Replaced previous pom file with reinitialized file, to solve JdbcTemplate issue." />
     <MESSAGE value="Removed NOT NULL and replaced it with ON DELETE CASCADE. Added GRANT statements, and a SELECT to test if my POST method actually wrote to the database." />
@@ -541,7 +613,11 @@
     <MESSAGE value="Added a drop to be safe, and added a select to see if stuff was being written to the comments table." />
     <MESSAGE value="Edited these controllers for the carrying of comments back and forth." />
     <MESSAGE value="Removed this class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed this class" />
+    <MESSAGE value="Prepared this class for handling comments" />
+    <MESSAGE value="Removed the trim from prereqs and benefits." />
+    <MESSAGE value="Added the jobId requirement, and added its getter and setter" />
+    <MESSAGE value="Removed the involvement of jobId" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed the involvement of jobId" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
@@ -582,20 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/employer_home.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/view_postings.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/CommentForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
@@ -603,24 +665,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/ViewPostingController.java">
+    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/ViewPostingController.java" />
+    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/landing.mustache">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        <state relative-caret-position="234">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-480">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/LandingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/view_employer_post.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/employer_home.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/make_post.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-131">
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/view_postings.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/view_post.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="43" column="55" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/JobPosting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1091">
-          <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
+        <state relative-caret-position="188">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/JobPostingForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1126">
-          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+        <state relative-caret-position="23">
+          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
           <folding>
             <element signature="e#656#657#0" expanded="true" />
             <element signature="e#686#687#0" expanded="true" />
@@ -646,85 +765,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/make_post.mustache">
+    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        <state relative-caret-position="253">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/landing.mustache">
+    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/EmployerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/view_post.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="43" column="55" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/schema-postgresql.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Repositories/PostgresJobRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="335">
+          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/Comment.java">
+    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Repositories/PostgresJobRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/LandingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="38" column="53" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/templates/view_employer_post.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Controllers/EmployerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="39" column="53" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
+        <state relative-caret-position="161">
+          <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/java/com/codyvanderpoel/BCCAEmployerPostings/Models/SortForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding>
+            <element signature="e#198#199#0" expanded="true" />
+            <element signature="e#227#228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BCCA-Employer-Postings/src/main/resources/schema-postgresql.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" />
+          <folding>
+            <marker date="1554226597535" expanded="true" signature="1004:1048" ph="..." />
           </folding>
         </state>
       </provider>
