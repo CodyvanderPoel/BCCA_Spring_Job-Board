@@ -11,15 +11,19 @@
 <body>
 <div class="container">
 <h1>BCCA Job Board</h1>
-    <div>
-        {{#jobs}}
-            <a href="/employer_view_jobs/{{ id }}">
-                Company: {{ company }}<br>Position: {{position}}
-            </a>
-            <br><br>
-        {{/jobs}}
+    <div class="d-flex justify-content-between">
+        <div>
+            {{#jobs}}
+                <a href="/employer_view_jobs/{{ id }}">
+                    Company: {{ company }}<br>Position: {{position}}
+                </a>
+                <br><br>
+            {{/jobs}}
+        </div>
+        <div>
+            <a class="btn  btn-primary" role="button" href="employer_home/make_posting">Post a Job</a>
+        </div>
     </div>
-<a class="btn  btn-primary" href="employer_home/make_posting">Post a Job</a>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
