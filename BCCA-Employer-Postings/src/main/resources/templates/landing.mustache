@@ -10,11 +10,29 @@
 </head>
 <body>
 <div class="container">
-<h1>BCCA Job Board</h1>
-<a href="/employer_home">Employer Port</a>
-<br>
-<!--<a href="/view_posting">View the example!</a><span>(Change later!)</span>-->
-<a href="/admin_home">Admin Port</a>
+    <nav class=" navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/"><img src=""><h1>BCCA Job Board</h1></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/employer_home">Employer Port <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin_home">Admin Port</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <p>Located in Water Valley, MS, Base Camp Coding Academy (BCCA) is a hands-on, challenging and fun program, designed to train students to be software developers in 12 months.
+        In a small classroom setting, you will work with real world technologies to learn the fundamentals of coding, app development and the life leadership skills you will need
+        to be successful in your career and competitive in the job market.
+    </p>
+    <div class="d-flex justify-content-center">
+    <img src="https://basecampcodingacademy.org/images/class-of-2019.jpg">
+    </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

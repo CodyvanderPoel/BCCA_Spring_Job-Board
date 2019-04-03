@@ -12,6 +12,22 @@
 </head>
 <body>
 <div class="container">
+    <nav class=" navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/"><img src=""><h1>BCCA Job Board</h1></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/employer_home">Employer Port <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin_home">Admin Port</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     {{#job}}
     <div>
         <p>Company: <br>{{ company }}</p>
@@ -23,14 +39,16 @@
     {{/job}}
     <div>
         <br>
-        <p>Comment Section</p>
-        <hr>
+        <p class="border-bottom border-dark">Comment Section</p>
         {{#comments}}
         <h4>{{ title }}</h4>
         <br>
         <p>{{ body }}</p>
         <hr>
         {{/comments}}
+    </div>
+    <div class="d-flex justify-content-end">
+        <a class="btn btn-primary m-2" role="button" href="/employer_home">Back</a>
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

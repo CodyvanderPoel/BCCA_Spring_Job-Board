@@ -12,51 +12,68 @@
 </head>
 <body>
 <div class="container">
-    <form class="filter-form" action="/admin_view_jobs" method="POST">
-        <div class="row">
-            <p class="col-sm-12 col-md-3 col-lg-3">
-                <label for="new">
-                    Newest</label>
-                <input
-                        id="new"
-                        type="radio"
-                        name="sortBy"
-                        value="new"
-                        checked
-                />
-            </p>
-            <p class="col-sm-12 col-md-3 col-lg-3">
-                <label for="old"
-                >Oldest</label>
-                <input
-                        id="old"
-                        type="radio"
-                        name="sortBy"
-                        value="old"
-                />
-            </p>
-            <p class="col-sm-12 col-md-3 col-lg-3">
-                <label for="alphabetized">A-Z</label>
-                <input
-                        id="alphabetized"
-                        type="radio"
-                        name="sortBy"
-                        value="alphabetized"
-                />
-            </p>
-        </div>
-
-        <button class="btn btn-success" type="submit">
-            Sort
+    <nav class=" navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/"><img src=""><h1>BCCA Job Board</h1></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-    </form>
-<div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/employer_home">Employer Port <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin_home">Admin Port</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="d-flex justify-content-between">
+     <div>
     {{#jobs}}
     <a href="/admin_view_jobs/{{ id }}">
         Company: {{ company }}<br>Position: {{position}}
     </a>
     <br><br>
     {{/jobs}}
+     </div>
+    <div class="col-lg-2 border border-dark">
+        <fieldset>
+            <legend class="m-2">Sort</legend>
+        <form action="/admin_view_jobs" method="POST">
+                    <div class="m-2">
+                    <label for="new">
+                        Newest</label>
+                    <input
+                            id="new"
+                            type="radio"
+                            name="sortBy"
+                            value="new"
+                            checked
+                    /><br></div>
+                    <div class="m-2">
+                    <label for="old"
+                    >Oldest</label>
+                    <input
+                            id="old"
+                            type="radio"
+                            name="sortBy"
+                            value="old"
+                    /><br></div>
+            <div class="m-2">
+                    <label for="alphabetized">A-Z</label>
+                    <input
+                            id="alphabetized"
+                            type="radio"
+                            name="sortBy"
+                            value="alphabetized"
+                    /><br></div>
+            <button class="btn btn-success m-2" type="submit">
+                Sort
+            </button>
+        </form>
+        </fieldset>
+    </div>
 </div>
 </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
